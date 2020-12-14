@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Password Generator</h1>
+    <h3 class="password-display" id="passwordDisplay">Your Secure Password</h3>
+    <form id="passwordGeneratorForm" class="form">
+      <label for="characterAmountNumber">Number Of Characters</label>
+      <div class="character-amount-container">
+        <input class="slider" type="range" min="8" max="128" value="8" id="characterAmountRange">
+        <input class="number-input" type="number" min="8" max="128" value="8" id="characterAmountNumber">
+      </div>
+
+      <label for="includeUppercase" class="labelContainer">Include Uppercase
+        <input type="checkbox" id="includeUppercase">
+        <span class="checkmark"></span>
+      </label>
+      
+      <label for="includeNumbers" class="labelContainer">Include Numbers
+        <input type="checkbox" id="includeNumbers">
+        <span class="checkmark"></span>
+      </label>
+      
+      <label for="includeSymbols" class="labelContainer">Include Symbols
+        <input type="checkbox" id="includeSymbols">
+        <span class="checkmark"></span>
+      </label>
+
+      <button type="submit" class="btn">Generate Password</button>
+    </form>
+  </div>
+</body>
+</html>
