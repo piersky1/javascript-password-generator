@@ -1,3 +1,5 @@
+// Event listeners for password parameters
+
 const characterAmountRange = document.getElementById('characterAmountRange')
 const characterAmountNumber = document.getElementById('characterAmountNumber')
 const includeUppercaseElement = document.getElementById('includeUppercase')
@@ -5,6 +7,8 @@ const includeNumbersElement = document.getElementById('includeNumbers')
 const includeSymbolsElement = document.getElementById('includeSymbols')
 const form = document.getElementById('passwordGeneratorForm')
 const passwordDisplay = document.getElementById('passwordDisplay')
+
+// Used ASCII character codes, instead of creating arrays with all lowercase, uppercase, numbers, and symbols
 
 const UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90)
 const LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122)
@@ -30,6 +34,8 @@ form.addEventListener('submit', e => {
   passwordDisplay.innerText = password
 })
 
+// Functions to generate password given selected parameters
+
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
   let charCodes = LOWERCASE_CHAR_CODES
   if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
@@ -51,6 +57,8 @@ function arrayFromLowToHigh(low, high) {
   }
   return array
 }
+
+// Function to sync slider with number input
 
 function syncCharacterAmount(e) {
   const value = e.target.value
