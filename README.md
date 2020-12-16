@@ -33,7 +33,7 @@ There are several options to "install" this project yourself:
 
 * Download and view project on your machine locally.
 
-* View the live, deployed application on the web at: [https://piersky1.github.io/homework2/](https://piersky1.github.io/homework2/)
+* View the live, deployed application on the web at: [https://piersky1.github.io/javascript-password-generator/](https://piersky1.github.io/javascript-password-generator/)
 
 
 ## Usage 
