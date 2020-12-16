@@ -29,7 +29,7 @@ I, as the developer, am in no way responsible for any damages (data breaches, et
 
 ## Installation
 
-There are several options to "install" this project yourself:
+There are multiple options to "install" this project yourself:
 
 * Download and view project on your machine locally.
 
